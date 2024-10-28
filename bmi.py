@@ -8,6 +8,8 @@ def calculate_bmi(height, weight):
 
  print("Your BMI is : " + str(bmi))
  print("You are "+classification)
+ 
+ return -1 if classification == "Under Weight" else (1 if classification == "Over Weight"  else 0)
 
 
 calculate_bmi(weight=57, height=1.73)
