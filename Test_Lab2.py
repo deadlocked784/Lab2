@@ -1,6 +1,5 @@
-import pytest
 import numpy as np
-from Lab2 import calc_min_max_temperature, calc_average_temperature, calc_median_temperature
+from lab2 import calc_min_max_temperature, calc_average_temperature, calc_median_temperature
 
 def test_calc_min_max_temperature():
     temperature = [5, 67, 32, 45, 21]
@@ -19,5 +18,4 @@ def test_calc_median_temperature():
     expected = np.median(temperature)
     assert result == expected, f"Expected {expected}, but got {result}"
 
-if __name__ == "__main__":
-    pytest.main()
+
